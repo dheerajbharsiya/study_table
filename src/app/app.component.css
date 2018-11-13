@@ -1,0 +1,119 @@
+body.has-header {
+    padding-top: 4em;
+}
+
+.container-study {
+    background-image: url(./../assets/images/background.jpg);
+    background-repeat: round;
+    height: 100vh;
+}
+
+
+.navbar.navbar-default {
+    margin-bottom: 0;
+}
+
+.navbar-mobile {
+    min-height: 3.2em;
+    min-width: 300px;
+}
+
+    .navbar-mobile .navbar-header {
+        padding: .2em;
+    }
+
+    .navbar-mobile .navbar-nav {
+        margin: 0 -15px;
+    }
+
+    .navbar-mobile .navbar-btn {
+        margin: .2em 0;
+        padding: .5em 1em;
+        font-size: 1em;
+    }
+
+    .navbar-mobile .navbar-toggle {
+        margin: .3em 0;
+        padding: .7em;
+    }
+
+    .navbar-mobile .navbar-btn-left {
+        position: absolute;
+        left: .2em;
+    }
+
+        .navbar-mobile .navbar-btn-left .glyphicon {
+            margin-right: .2em;
+        }
+
+    .navbar-mobile .navbar-btn-right {
+        position: absolute;
+        right: .2em;
+    }
+
+        .navbar-mobile .navbar-btn-right .glyphicon {
+            margin-left: .2em;
+        }
+
+    .navbar-mobile .navbar-btn-left, .navbar-mobile .navbar-btn-right {
+        top: 0;
+    }
+
+    .navbar-mobile .navbar-title {
+        font-size: 1.3em;
+        text-align: center;
+        margin: 0 30%;
+        display: block;
+        padding: .5em 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        outline: 0 !important;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #888;
+    }
+
+@media (min-width: 768px) {
+    .navbar-mobile .navbar-header {
+        float: none;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .navbar-mobile .navbar-right {
+        float: none !important;
+    }
+
+    .navbar-mobile .navbar-btn-left {
+        left: 15px;
+    }
+
+    .navbar-mobile .navbar-btn-right {
+        right: 15px;
+    }
+
+    .navbar-mobile .navbar-nav > li {
+        float: none;
+    }
+
+    .navbar-mobile .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-mobile .nav {
+        float: none;
+        margin: 0;
+    }
+
+    .navbar-mobile .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+        .navbar-mobile .navbar-collapse.collapse.in {
+            display: block !important;
+        }
+}

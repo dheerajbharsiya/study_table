@@ -1,0 +1,25 @@
+.home-page {
+color: white;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+font-size: 26px;
+font-family: cursive;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+margin-top: 10%;
+}
+
+.home-page .welcome-note {
+    font-size: 30px;
+}
+
+.btn-study {
+    padding: 10px;
+    font-size: 20px;
+    stroke: crimson;
+    border-radius: 0;
+    color: white;
+    font-weight: bolder;    
+    background: teal;
+}

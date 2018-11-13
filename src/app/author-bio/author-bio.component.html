@@ -1,0 +1,33 @@
+<form #newTopic="ngForm" (ngSubmit)="onSubmit()" novalidate name="formTopic">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="m2">
+                <input class="form-control" placeholder="Article on?"  [(ngModel)]="articleHeading" name="articleHeading"/>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class=" m2">
+                <input class="form-control" placeholder="author name" [(ngModel)]="authorName" name="authorName" />
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="m2">
+                <select [value]="technology" class="form-control" [(ngModel)]="technology" name="selectedTechnology">
+                    <option value="angular">Angular</option>
+                    <option value="javascript">Javascript</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <angular-editor [config]="config" name="editor" [(ngModel)]="editorData"></angular-editor>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <button class="btn btn-primary pull-right m2-top" type="button" (click)="onSubmit()">Update</button>
+        </div>
+    </div>
+</form>

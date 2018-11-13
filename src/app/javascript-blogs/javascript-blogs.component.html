@@ -1,0 +1,11 @@
+<div *ngIf="topics?.length>0">
+    <div class="row m2-top" *ngFor="let topic of topics">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p class="artical-heading">{{topic.articleHeading || "angular and its versions"}} 
+                    <span class="pull-right">{{topic.authorName}}</span></p>
+                <p class="pull-right" (click)="wholeArticle(topic.editorData)"><a>Read whole artical==></a></p>
+            </div>
+        </div>
+    </div>
+</div>
